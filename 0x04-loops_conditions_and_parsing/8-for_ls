@@ -1,3 +1,7 @@
-for_best_school
-fizzbuzz
-tell_the_story_of_passwd
+#!/usr/bin/env bash
+# This script lists files and displays only the part after the first dash
+
+for file in *-*
+do
+  echo "${file#*-}"
+done
