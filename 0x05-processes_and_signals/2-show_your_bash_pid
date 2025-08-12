@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Shows only the lines for bash processes from the full process tree
+# shellcheck disable=SC2009
+ps -eo user,pid,pcpu,pmem,vsz,rss,tty,stat,start,time,cmd --forest | grep bash
